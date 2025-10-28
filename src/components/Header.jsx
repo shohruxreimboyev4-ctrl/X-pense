@@ -3,22 +3,25 @@ import logo from '../assets/svg/logo.svg'
 
 const Header = () => {
   return (
-    <header>
-      <div className="container header_container">
-        <a href="#">
-        <img src={logo} alt="Logo" className="logo" />
-        </a>
+<header>
+  <div className="container header_container">
+    <a href="#">
+        <img src={logo} alt="logo" className="logo" />
+    </a>
 
-        <nav className="nav_links">
-          <a href="#features">Features</a>
-          <a href="#about">About us</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#feedback">Feedback</a>
-        </nav>
+    <nav className="nav_links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
 
-        <button className="btn_demo">Request a demo</button>
-      </div>
-    </header>
+    <button className="btn_demo">Request Demo</button>
+  </div>
+</header>
+
+
   )
 }
 
