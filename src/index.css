@@ -153,3 +153,64 @@ header {
   border-radius: 8px;
 }
 /* hero end */
+
+
+.overview {
+  background: linear-gradient(90deg, #ff7a3d 0%, #ff9c67 100%);
+  padding: 80px 0 60px;
+}
+
+.overview .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.overview_image img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.brand_logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.brand_logos img {
+  height: 34px;
+  opacity: 0.4;
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+}
+
+.brand_logos img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .overview .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .overview {
+    padding: 60px 0 40px;
+  }
+  .brand_logos {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .brand_logos img {
+    height: 28px;
+  }
+}
